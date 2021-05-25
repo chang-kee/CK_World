@@ -1,14 +1,18 @@
 package com.ckcho.world;
 
-import com.sun.tools.jdeps.Analyzer.Type;
+import java.util.Arrays;
 
 public class World {
 
 	public static void main(String[] args) {
-		Park world = Park.동물원;
+		Park world = Park.공원;
 		System.out.println("CK월드에 오신걸 환영합니다");
-		System.out.println(Park.공원);
+		Park park[] = Park.values();
+		String.join("/", park.toString());
+		System.out.println(
+				Arrays.toString(park));
 
 	}
 
 }
+	
