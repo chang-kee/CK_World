@@ -1,6 +1,6 @@
 package com.ckcho.sports;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class World {
 
@@ -18,11 +18,14 @@ public class World {
 				Sports.세리에.toString(),
 				Sports.분데스리가.toString() );
 	
-		System.out.println(
-				Arrays.toString(shirts));
-		
 		System.out.println(league);
-		String[] leagues = league.split("/");
+		System.out.println("원하는 유니폼 종류를 입력: ");
+		
+		Scanner scanner = new Scanner(System.in);
+		int 제품번호 = scanner.nextInt();
+		System.out.println("제품번호" + 제품번호 + "를 선택하셨습니다");
+		scanner.close();
+		
 		return ;
 	}
 
