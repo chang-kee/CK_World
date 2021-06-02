@@ -47,7 +47,6 @@ public class World {
 			break;
 		case 분데스리가:
 			System.out.println("분데스리가를 선택하셨습니다.");
-			// break;
 		default:
 			break;
 		}
